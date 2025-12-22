@@ -27,6 +27,15 @@ a {
   margin-right: auto;
 }
 
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 3.8rem;
+  line-height: 4.8rem;
+  letter-spacing: -2%;
+}
 .btn {
   display: inline-block;
   padding: 0 16px;
@@ -42,6 +51,7 @@ a {
 }
 
 .btn:hover {
+  cursor: pointer;
   opacity: 0.8;
 }
 /* header */
@@ -271,4 +281,134 @@ header {
 
 .hero .stats strong:nth-child(2) {
   margin-left: 28px;
+}
+
+/* Popular Courses */
+
+.popular {
+  padding: 65px 0;
+  margin-top: 135px;
+}
+
+.popular-top .desc {
+  margin-top: 16px;
+  width: 458px;
+  font-style: Regular;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: #5f5b53;
+}
+
+.popular-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-top .control-btn {
+  color: var(--primary-btn);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  border-radius: 50%;
+  border: 1px solid var(--primary-btn);
+  background: transparent;
+}
+
+.popular-top .control-btn:hover {
+  background-color: var(--primary-btn);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.popular-top .control {
+  display: flex;
+  gap: 18px;
+}
+
+.popular .course-list {
+  margin-top: 55px;
+  display: flex;
+  gap: 30px;
+}
+
+.popular .course-item .thumbnail {
+  width: 100%;
+  height: 28.1rem;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.popular .course-item {
+  border-radius: 12px;
+  border: 1px solid #e2dfda;
+  background: #fff;
+}
+
+.popular .course-item:hover {
+  border-radius: 12px;
+  border: 1px solid transparent;
+  box-shadow: 0px 18px 36px 0px #0000000d;
+  background: #ffffff;
+}
+
+.popular .course-item .info {
+  padding: 16px 22px 22px;
+}
+
+.popular .course-item .head,
+.popular .course-item .foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popular .course-item .title a {
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000;
+}
+
+.popular .course-item .rating {
+  display: flex;
+  align-items: center;
+}
+
+.popular .rating .value {
+  margin-left: 6px;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: #fea31b;
+}
+
+.popular .course-item .desc {
+  margin-top: 6px;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+}
+
+.popular .course-item .foot {
+  margin-top: 12px;
+}
+
+.popular .course-item .price {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: #171100;
+}
+
+.popular .course-item .btn-book {
+  border: none;
+}
+
+.popular .course-item .btn-book:hover {
+  background-color: var(--primary-btn);
 }
