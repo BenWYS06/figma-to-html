@@ -27,6 +27,21 @@ a {
   margin-right: auto;
 }
 
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
+.break-all {
+  word-break: break-all;
+}
+
 .heading-lv2 {
   color: #171100;
   font-family: var(--font-heading);
@@ -344,6 +359,7 @@ header {
 }
 
 .popular .course-item {
+  flex: 1;
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background: #fff;
@@ -411,4 +427,75 @@ header {
 
 .popular .course-item .btn-book:hover {
   background-color: var(--primary-btn);
+}
+
+/* Feedback */
+.feedback {
+  margin-top: 135px;
+  padding: 96px 0;
+  background: #2e2100;
+}
+
+.feedback .feedback-item {
+  display: flex;
+}
+
+.feedback .avatar {
+  width: 72px;
+  height: 72px;
+  opacity: 1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feedback-item .info .member-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  color: #ffffff;
+}
+
+.feedback-item .info .desc {
+  margin-top: 4px;
+  font-style: Regular;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  color: #bfbcb2;
+}
+
+.feedback-item .dots {
+  display: flex;
+  gap: 6px;
+  margin-top: 28px;
+}
+
+.feedback-item .dot {
+  width: 6px;
+  height: 6px;
+  opacity: 1;
+  border-radius: 50%;
+  background: #634700;
+  cursor: pointer;
+}
+
+.feedback-item .dot.active {
+  cursor: default;
+  background-color: var(--primary-btn);
+}
+
+.feedback-item .content {
+  width: 66%;
+}
+
+.feedback-item .blockquote {
+  color: #ffffff;
+  font-style: Italic;
+  font-size: 2.6rem;
+  line-height: 4rem;
+}
+
+.feedback-item {
+  justify-content: space-between;
 }
