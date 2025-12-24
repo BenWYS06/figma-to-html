@@ -610,10 +610,12 @@ header {
   gap: 30px;
   display: flex;
   margin-top: 55px;
+  overflow: hidden;
 }
 
 .blogs .item {
-  width: 33%;
+  flex-shrink: 0;
+  width: calc(33.33% - 20px);
   background: #ffffff;
   border-radius: 16px;
 }
@@ -680,8 +682,30 @@ header {
 
 .blogs .item .btn {
   margin-top: 12px;
+  font-size: 1.4rem;
 }
 
 .blogs .item .btn:hover {
   background: var(--primary-btn);
+}
+
+.blogs .dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+  gap: 6px;
+}
+
+.blogs .dots .dot {
+  width: 6px;
+  height: 6px;
+  opacity: 1;
+  border-radius: 50%;
+  background: #5f5b53;
+  cursor: pointer;
+}
+
+.blogs .dots .dot.active {
+  background-color: var(--primary-btn);
+  cursor: default;
 }
